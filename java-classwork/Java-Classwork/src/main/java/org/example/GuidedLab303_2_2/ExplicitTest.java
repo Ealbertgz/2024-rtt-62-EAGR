@@ -1,4 +1,4 @@
-package GuidedLab303_2_2;
+package org.example.GuidedLab303_2_2;
 
 public class ExplicitTest {
     public static void main(String[] args){

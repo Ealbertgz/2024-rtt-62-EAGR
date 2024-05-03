@@ -1,3 +1,5 @@
+package PA_303_2_2;
+
 import java.util.Scanner;
 
 public class Homework303_2_2 {

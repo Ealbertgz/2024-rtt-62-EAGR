@@ -1,3 +1,5 @@
+package PA_303_2_1;
+
 public class Homework303_2_1 {
     public static void main(String[] args) {
         //Write a program that declares two integer variables, assigns an integer to each,

@@ -1,4 +1,4 @@
-package GuidedLab_303_2_1;
+package org.example.GuidedLab_303_2_1;
 
 public class ArithmeticOperatorsDemo {
     public static void main(String args[]){
