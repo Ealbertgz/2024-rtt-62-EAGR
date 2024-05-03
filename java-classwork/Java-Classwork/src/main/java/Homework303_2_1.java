@@ -1,5 +1,3 @@
-package org.example;
-
 public class Homework303_2_1 {
     public static void main(String[] args) {
         //Write a program that declares two integer variables, assigns an integer to each,
@@ -37,7 +35,7 @@ public class Homework303_2_1 {
         int v2 = 2;
 
         double div = (double) v1 / (double) v2;
-        System.out.println(div);
+        System.out.println("!!!!!! " + v1 + "/ " + v2 + " = " +div);
 
         //Write a program that declares two double variables,
         // assigns a number to each, and divides the larger by the smaller number.
@@ -111,6 +109,10 @@ public class Homework303_2_1 {
       // double subtotal = (coffee * 3) + (capuccino * 4) + (espresso * 2);
 
        // double salesTaxAmount = subtotal * SALES_TAX
+        //double totalAmount = subtotal + salesTaxAmount;
+
+        //DecimalFormat df = new DecimalFormat ( "0.00")'
+       // System.out.println("Subtotal :")
 
 
     }

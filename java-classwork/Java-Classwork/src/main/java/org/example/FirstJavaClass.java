@@ -24,6 +24,9 @@ public class FirstJavaClass {
 
         char ch = 'Z';
         System.out.println(ch);
+
+        int zero = 4% 2;
+        int one = 5 % 2;
     }
 }
 
