@@ -4,7 +4,7 @@ package coffeeshop;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Coffeeshop {
+public class CoffeeShop {
 
     private List<Product> products = new ArrayList<>();
 
