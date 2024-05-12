@@ -1,7 +1,15 @@
 package org.example;
 
 public class StringBufferExample {
+
     public static void main(String[] args){
+
+    // NOTE - the 2nd argument is NOT incluse of the position
+        // Run this in the debugger to see what each statement is doing
+        //for the KBA use a piece of blank scratch paper to write the string
+//        down after each operation
+
+
         //012345678901
         //filename.txt
 
