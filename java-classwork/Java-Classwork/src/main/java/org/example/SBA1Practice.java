@@ -2,7 +2,10 @@ package org.example;
 
 public class SBA1Practice {
     public static void main(String[] args) {
-
+//        if you want to convert to string - if it comes as an int
+// Integer y = x;
+//        y.toString();
+//
 
         String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
