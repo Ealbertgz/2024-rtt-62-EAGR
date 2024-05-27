@@ -1,0 +1,1 @@
+select truncate(1.555,1)
