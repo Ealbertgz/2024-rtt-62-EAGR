@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    color: red;
+  }
+  
+  h2 {
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    
+  }
+
+  .p2 {
+    font-family: serif;
+  }
+  
+  ul {
+    font-weight: bold;
+  }
+
+  h3 {
+    text-align: center;
+    color: green;
+  }

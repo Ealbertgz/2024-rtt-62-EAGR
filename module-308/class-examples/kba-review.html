@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //this is a comment in Javascript
+        //the substring function works the same way as Java does
+        //remember that the first position is 0
+            //  01234567890
+
+        let a= "Hello world";
+        console.log(a.substring(4,5));
+        console.log("Lastindex = " + a.lastIndexOf("l"));
+
+        //what is z going to print?
+        //watch for the ""because that is a string and will not evaluate the math
+
+        let x= 5;
+        let y = 6;
+        let z= ("x*y");
+
+        console.log(z);
+
+        //the difference between == and ===
+        //not only is it a KBA question but it is important to know also
+        //=== compares not only the value but the data type as well
+
+        console.log("1" ==1); //true
+        console.log("1" =="1"); // true
+        console.log(1==1) //true
+        console.log("1" ===1) //false
+        console.log(1===1) //true
+
+        //one difference between let and var is you can only define something
+        // with using let once in the same code block, with var it will allow more than once
+        let abc ="123";
+        //let abc = "abc"
+
+        //this line is an error because abc is already defined
+
+        //var will allow more than once in the same code block,
+        //also this is bad practice to do this
+        var xyz ="123";
+        var xyz ="abc";
+        console.log(xyz);
+
+        //how to make an alert box in javascript
+        //this can be nice for debugging
+
+        alert("some message to popup");
+
+        //Javascript is a weakly typed language meaning a variable can be of any type
+        //and that type can chance
+
+        //Java is a strongly typed language meaning the datatype must be specificied
+        //at compile time and cannot change at runtime
+        
+        //Javascript is a scripting language that is weakly typed
+
+        //FACT! External javascript files CANNOT contain HTML
+
+        //in Javascript we can contatinate strings using the +
+        //This is the same as Java
+
+        let str= "Hello" + "World";
+        console.log(str);
+
+        //in javascript creating a date is very flexible
+        //Java is very strict
+
+        let date1= new Date("Thu Jan 29 2009 17:34:41");
+        let date2 = new Date("2024-01-29");
+
+        //getMonth returns a number between 0 and 11
+        // it is considering January month to be 0
+        console.log("Month =" + date1.getMonth());
+        console.log("Month =" + date2.getMonth());
+        console.log(date1.getMonth() === date2.getMonth());
+        //this will convert the 1st one therefore it will return true
+
+        //in javascript continue works the same as it does in java
+        //also break works the same way as it does in java
+
+        for(let i=0; i<5; i++ ){
+            if(i==3){
+                continue;
+            }
+            console.log(i);
+        }
+
+
+
+        //TRUE Statement : Javascript is "safe" in that the browser does not allow direct access
+        //to the memory or the CPU
+
+        //Very common gotcha - this is an every day important thing to know
+        let trick = 8 + "8";
+        console.log(trick) // answer is 88
+
+
+        //all 5 of these are important to know
+
+        //getElementsByTagName - find elements in the document by their HTML tag
+        //for example find all of the p tags
+
+        //getElementsById - find an element by the id ="" attribute
+        //we know that this will return a single element because id is unique
+
+        //getElementsByClassName - finds all elements with the CSS class name
+
+        //getElementsByName - finds all elements with name ="" attribute
+
+
+        //querySelector - find the first element in the document based on the CSS query
+        // this one is the most powerful and most used
+
+        //you cannot subtract a string from a string
+        // it is not causing a compile or run error
+        //Nan means...not a number
+
+        let q = "Hello" - "World";
+        console.log(q);
+
+        //for loops
+        let person = {
+            firstName : "Eric",
+            lastName: "Smith",
+            eyeColor: "brown"
+        }
+
+        //when we use in it loops over the keys
+        // in means loop over the keys
+        for (let i in person){
+            console.log(i + "=" + person[i]);
+        }
+
+        //of is looping over the values of an array
+        let array = [1,2,3,4];
+
+        for (let i of person){
+            console.log(i);
+        }
+
+        // 2 ways of registering an event listener
+        // first is using the onclick="functionToRun()" on a html tag like we did in buttonclick.html
+        //second is using the addEventListener built into the javascript language. This method is available on lal
+        //html elements
+// to use the addEventListener function first you have to query the element from the document
+//then you can use the addEventListener('click', function());
+
+//TRUE - Array.splice() changes the original array whereas Array.slice() does not.
+
+//308.4 slide #28 talks about creating new HTML elements
+// there are 2 ways of creating elements
+//document.createElement('p'); this will create a new p tag in the document - can make all tags
+
+//createTextNode() // this only works for text nodes like a p tag
+
+//Javascript trivia about numbers
+//number datatype in javascript is either an integer or a float
+
+
+    </script>
+</body>
+</html>

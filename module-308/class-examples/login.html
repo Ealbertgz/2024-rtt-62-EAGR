@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm" onsubmit="validateForm(event)">
+
+
+        <fieldset>
+            <h1>Newsletter Sign-up</h1>
+            <legend>
+                User personal information
+            </legend>
+            <label
+                >Enter your full name</label
+            >
+            <input  type="text"  id="name" name="name" />
+            <span id="nameError" class="error"></span>
+            <label>Enter your email</label>
+            <input id="email" type="email" name="email" />
+            <span id="emailError" class="error"></span>
+            <label>Enter your password</label>
+            <input required
+                type="password"
+                name="pass"
+            />
+            <label
+                >Confirm your password</label
+            >
+            <input required
+                type="password"
+                name="confirmPass"
+            />
+            <label>Enter your gender</label>
+            <input
+                type="radio"
+                name="gender"
+                value="male"
+            />Male
+            <input
+                type="radio"
+                name="gender"
+                value="female"
+            />Female
+            <input
+                type="radio"
+                name="gender"
+                value="others"
+            />Others
+            <label
+                >Enter your Date of
+                Birth</label
+            >
+            <input type="date" name="dob" />
+            <label>Enter your Address:</label>
+            <textarea
+                name="address"
+            ></textarea>
+            <input
+                type="submit"
+                value="submit"
+            />
+        </fieldset>
+    </form>
+</body>
+</html>

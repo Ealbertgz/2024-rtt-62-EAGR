@@ -1,12 +1,14 @@
 package org.example.database.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
 @Entity
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name= "products")
 
 public class Product {
@@ -21,25 +23,25 @@ public class Product {
     private String productName;
 
     @Column (name = "productline_id")
-    private String productLineId;
+    private Integer productLineId;
 
     @Column (name = "product_scale")
     private String productScale;
 
-    @Column (name = "productline_vendor")
+    @Column (name = "product_vendor")
     private String productVendor;
 
-    @Column (name = "product_description")
+    @Column (name = "product_description", length = 65535, columnDefinition="Text")
     private String productDescription;
 
-    @Column (name = "quantity_in_stock")
+    @Column (name = "quantity_in_stock", columnDefinition = "SMALLINT")
     private Integer quantityInStock;
 
-    @Column (name = "buy_price")
+    @Column (name = "buy_price", columnDefinition = "DECIMAL")
     private Double buyPrice;
 
-    @Column (name = "msrp")
-    private String msrp;
+    @Column (name = "msrp", columnDefinition = "DECIMAL")
+    private Double msrp;
 
 
 
